@@ -9,10 +9,10 @@ module.exports = {
 dbConnection: function () {
 
     connection = mysql.createConnection({
-        host: 'bnwbswzzqeighdahjoxo-mysql.services.clever-cloud.com',
-        user: 'ujolpjatza6urz2z',
-        password: 'k0omwf5i4VRjalCpIHyK',
-        database: 'nobnwbswzzqeighdahjoxoeJs',
+        host: 'localhost',
+        user: 'root',
+        password: '1234',
+        database: 'nodejs',
         insecureAuth : true,
         port: 3306,
         dateStrings:true
