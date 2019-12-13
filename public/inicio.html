@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <script src="https://kit.fontawesome.com/279c3614b2.js"></script>
+
+    <link rel="stylesheet" href="css/buttons.css">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <div class="row"  style="background-color: black;">
+		<div class="col-md-11 col-lg-11" >
+			<nav class="navbar fixed-top navbar-expand-md navbar-light" >
+				    <div class="container"><!--mantiene el texto en el medio-->
+				    <a class="navbar-brand" href="./inicio.html"><h1 style="font-size: 300%;font-style:italic;font-stretch:extra-condensed;text-shadow:0.01em 0.01em white;">LA NELLY</h1></a>
+			
+				    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    		<span class="navbar-toggler-icon"></span>
+				    	</button>
+					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    	   <ul class="navbar-nav  nav-pills ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link text-dark" href=""><h1 id="h1">Inicio      </h1> <span class="sr-only">(current)</span></a>
+                                      </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-dark"><h1 id="h1">Nosotros       </h1></a>
+                                    
+                                    </li>
+                                    <li class="nav-item dropdown" >
+                                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <h1 id="h1">Nuestro menú</h1>
+                                        </a>
+                                        <div  id="dropdown-menu" class="dropdown-menu" style=" color:black; background-color:rgb(255, 255, 255);">
+                                            <a href="#" class="dropdown-item text-dark" id="a1">Bebibas</a>
+                                            <a href="#" class="dropdown-item text-dark" id="a1">Entradas</a>
+                                            <a href="#" class="dropdown-item text-dark" id="a1">Parrilla</a>
+                                            <a href="#" class="dropdown-item text-dark" id="a1">Nuestra cocina</a>
+                                            <a href="#" class="dropdown-item text-dark "id="a1" >Postres</a>
+                                            <a href="#" class="dropdown-item text-dark" id="a1">Cafeteria</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a href="#misreservas" class="nav-link text-dark"><h1 id="h1">Consultar reservas</h1></a>
+                                    
+                                    <li class="nav-item" >
+                                        <a href="#" class="nav-link text-dark"><h1 id="h1"> <span style="font-size: 150%;" class="glyphicon glyphicon-earphone"></span>Contacto</h1></a>
+                                    </li>
+                                </li>
+                                <li>
+                                <a href="#cont-ubicacion" class="nav-link text-dark"><h1 id="h1"><i style="font-size: 150%;;" class="fas fa-map-marker"></i>Ubicacion</h1></a>
+                                </li>
+                                           
+                                   
+                                </ul>
+						</div>
+				  	</div>
+				 
+			</nav>
+			</div>
+    </div>
+    <br>
+
+        <div class="conteiner" id="#inicio" >
+            <div class="row" id="#inicio">
+                <div class="col-md-12 col-xs-12" id="body-cuadro" >        
+                   <div class="box" id="img-fuego" style="width: 130%;height: 60%;"id="body-cuadro">
+                        <img  src="./img/fuego.jpg" alt="" style="width: 57% ; height: 100%;" >   
+                   </div>      
+                </div>
+            </div>
+        </div>
+           </div>
+       </div>
+   </div>
+        <div class="modal fade "  role="dialog"
+         id="modal1" style="margin-top: 20%;padding-top: 10%;width: 150%;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+                    <h4 style="font-size: 200%;">ENTRAR</h4>
+            </div>
+            <div class="modal-body mx-3">
+                <form role="form" id="form-ingreso">
+                    <div class="form">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 300%;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                       
+                    <hr>
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="email" id="email" class="form-control validate" style="font-size: 200%;">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email" style="font-size: 200%;">email</label>
+                        </div>      
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="password" id="password" class="form-control validate" style="font-size: 200%;">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass" style="font-size: 200%;">Contraseña:</label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary" style="font-size: 200%;;">ENTRAR</button>
+                </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="conteiner" id="#reservas" style="position: relative;width: 100%;text-align: center;border: groove; background-color: rgb(204, 190, 190);" id="cont-ubicacion">
+                <div class="row" >
+                    <div class="col">
+                        <div class="card" style="background-color: rgb(204, 190, 190);">
+                                <div class="card-body" style="position:relative;margin-top: 75px;margin-bottom: 74px;">
+                                        <a href="./reserva.html"><span style="font-size: 5em; color: black;"><i class="fas fa-book-open"></i>Reservar</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conteiner" id="misreservas" style="position: relative;width: 100%;text-align: center;border: groove; background-color:lightgrey;" >
+                    <div class="row" >
+                        <div class="col"style="background-color: rgb(204, 190, 190);">
+                            <div class="card" style="background-color: rgb(253, 253, 253);">
+                                <div class="card-body" style="position:relative;margin-top: 75px;margin-bottom: 74px;">
+                                    <a href="./misreservas.html"><span style="font-size: 5em;color: black;"><i class="fas fa-search"></i>Consultar mi reserva</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="conteiner" style="position: relative;width: 100%;text-align: center;border: groove;color:white; background-color:black;" id="cont-ubicacion">
+                <div class="row">
+                        <div class="col">
+                            <br><br>
+                                <h1><i class="fas fa-map" style="font-size: 250%;color: rgb(164, 252, 164)"></i>    UBICACION:</h1>
+                                <br>
+                        </div>
+                <div class="col-md-6" style="margin-top: 30px;">
+                         <h3>Parrilla Nelly</h3>
+                        <h3>Juan Bautista Alberdi, 200</h3>
+                       <h3> Olivos, Vicente Lopez</h3>
+                       <h3>Buenos Aires, Argentina</h3>
+                </div>
+        </div>
+         <div class="row" >    
+                  <div class="col-md-12" style="margin-left: 5%;margin-right: 2%;margin-top: 2%;" >
+                    <div class="map" id="map" style="position: relative;height: 450px;width: 90%;">
+                            
+                    </div>
+                </div>
+                <div class="col">    
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+  
+        <div class="conteiner" id="cont-pagos" style="border: groove ;border: groove; background-color: rgb(204, 190, 190)">
+            <div class="row" style="margin-top: 30px;margin-bottom: 30px;" >
+                <div class="col" id="pago0">
+                    <h1 style="text-align: center;font-weight:bold;font-size: 250%;color:black"> <i class="fas fa-hand-holding-usd" style="font-size: 200%;;color: maroon;"></i> FORMAS DE PAGO HABITILITADOS</h1>
+                    <br>
+                </div>
+            </div>
+            <div class="row" id="row-pagos">
+                <div class="col-lg-3 col-md-2 col-sm-4 col-xs-3" >
+                    <div class="box">
+                        
+                        <img src="./img/formas de pago/visa.png" alt=""style="position: relative;width: 30%;">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-4 col-xs-3" id="pago1">
+                        <div class="box">
+                            <img src="./img/formas de pago/visa electron.png" alt=""style="position: relative;width: 30%;">
+                        </div>
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-4 col-xs-3" id="pago2">
+                        <div class="box">
+                            <img src="./img/formas de pago/amex.png" alt=""style="position: relative;width: 30%;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-4 col-xs-3" id="pago3">
+                            <div class="box">
+                                <img src="./img/formas de pago/maestro.png" style="position: relative;width: 30%;" alt="">
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-4 col-xs-3" id="pago4">
+                            <div class="box">
+                                <img src="./img/formas de pago/mastercard.png" alt=""style="position: relative;width: 30%;">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-2 col-sm-4 col-xs-3" id="pago5">
+                                <div class="box">
+                                    <img src="./img/formas de pago/dola.jpg" alt=""style="position: relative;width: 30%;">
+                                </div>
+                        </div>
+                        <div class="col-lg-3 col-md-2 col-sm-4 col-xs-3" id="pago6">
+                                <div class="box">
+                                    <img src="./img/formas de pago/pesos.png" alt="" style="position: relative;width: 30%;">
+                                </div>
+                            </div>
+                            
+            </div>
+            <div class="container-fluid" style="position: relative;width: 100%;text-align: center;border: groove;color:black; background-color:white;" id="cont-telefono">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br><br><br><br>
+                                <h1> <i class="fas fa-phone"></i> (011) 4794-44660</h1>
+                                <h1> Abierto todos los dias, de 9 a.m a 02 a.m</h1>
+                                <br><br><br><br>
+                        </div>
+                    </div>
+                </div>
+         
+        </div>
+        
+        <div class="container-fuid" style="position: fixed;z-index: 150%; left: 1%;top: 80%;width: 10px;height: 10px;">
+            <div class="row">
+                <div class="col-md-3">
+                        <a href="/reserva.html" target="_blank" class="btn btn-lg btn-success" style="font-size: 300%;"><span class="glyphicon glyphicon-cutlery"></span>  Reservar mesa </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="#by" style="position: relative;top: 25%;width: 100%;text-align: center;border: groove; background-color:rgb(99, 39, 39);" id="cont-ubicacion">
+                <div class="row" >
+                    <div class="col-md-11 col-lg-11,col-xs-10">
+                        <div class="card" style="background-color:rgb(99, 39, 39);">
+                            <div class="card-body" style="position:relative;margin-top: 5px;margin-bottom: 2px;">
+                                <span style="color:white; font-weight:inherit; font-size:140%;"></i>login</a>2019 - Diseños web personizados : sebastianbatalla1@gmail.com - Todos los derechos reservados©</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-lg-1,col-xs-2" style=" background-color:rgb(99, 39, 39);" >
+                            <button id="btn-acceso" class="btn btn-default" type="button" 
+                            data-toggle="modal" data-target="#modal1">acceso reservas</button>   
+                    </div>
+                </div>
+            </div>
+
+<script src="./js/inicio.js"></script>
+<script src="./js/acceso.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5JNdMdRhA-fkmiNnjsbs-xmCtpHyERZo"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+background: #43cea2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+span,input,select{
+    font-weight: bold;font-size: 200%;
+}
+.my-custom-scrollbar {
+    background-color: white;
+    position: relative;
+    height: 92%;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+
+@media(min-width:768px) and (max-width:1250px) {
+
+    }
+    @media (min-width: 767px){
+        label{
+            font-size: 130%;
+        }
+        #agregar-fecha{
+            color:white;
+            font-size: 200%;
+        }
+        .btn{
+            font-size: 200%;
+        }
+        
+    }
+    @media(max-width:768px)  {
+    
+        }

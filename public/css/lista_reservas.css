@@ -1,0 +1,61 @@
+
+body{
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media(min-width:768px) and (max-width:1250px) {
+#cont{
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+}
+@media (min-width: 767px){
+
+}
+@media(max-width:768px)  {
+
+    }
+label{
+    font-size: 1.6em;
+}
+
+#filtro-1,#filtro-2,#filtro-3{
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-size: 150%;
+    font-weight: bold;
+}
+#btn-1{
+    font-size: 150%;
+    font-weight: bold;
+}
+#cont-2{
+    margin:1%;
+}
+#arriba,#abajo{
+    margin-left: 5%;
+    font-size: 200%;
+    color: white;
+}
+#cont-1{
+
+    border-radius: 5%;
+    border-color: darkblue;
+}
+
+#reserva-0
+{
+
+    text-align: left;
+    border-radius: 2%;
+}
+#cont-3,#cont-4{
+    color: white;
+    font-size: 150%;
+}
+button{
+    font-size: 150%;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+
+    <link rel="stylesheet" href="./css/reserva.css">
+    <script src="https://kit.fontawesome.com/279c3614b2.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+		<div class="col-md-8 col-lg-12">
+		
+		</div>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+
+    <div class="container" id="cont-reserva"  style="margin-top:2%;border-radius: 2%;">    
+        <div class="row">
+            <div class=" col-md-10 col-lg-10 col-xs-12" >
+                    <div class="card" id="card-reserva" >
+                            <div class="card-header" style="background-color:black;">
+                                    <h1 class="display-4" style=" color:white;text-align: center;font-size: 4em;font-weight: bold;padding-top: -4%;">Haga su reserva</h1>
+                            </div>
+                            <div class="card-body">
+                                    <form id="form" action="reservas" method="POST">
+                                            <div class="form-group " id="col-form">
+                                                <label for="nombre"><b>Nombre</b> *</label>
+                                                <div class="inputGroupContainer">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                        <input  name="nombre" placeholder="Ej: Juan" class="form-control" id="nombre" type="text" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="apellido"><b>Apellido</b> *</label>
+                                                <div class="inputGroupContainer">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                        <input name="apellido" placeholder="Ej: Perez" class="form-control" id="apellido" type="text" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label for="apellido"><b>Telefono</b> *</label>
+                                                <div class="inputGroupContainer">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fas fa-phone"></i></span>
+                                                       <input name="telefono" placeholder="ej: 11664554477 " class="form-control" id="telefono" type="number" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label for="email"><b>Email</b> *</label>
+                                                <div class="inputGroupContainer">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="far fa-envelope"></i></span>
+                                                        <input name="email" placeholder="tu-email@gmail.com" class="form-control" id="email" type="email" required>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label for="fecha"><b>Fecha</b> *</label>
+                                                <div class="inputGroupContainer">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="far fa-calendar"></i></span>
+                                                        <input name="fecha"  id="fecha" type="date" required style="width: 70%;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fecha"><b>Salon: </b> *</label>
+                                                <div class="inputGroupContainer">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                        <select name="salon" id="salon" required style="width: 70%;">
+                                                            <option value="default">Seleccionar salon</option>
+                                                            <option value="arriba">Primer piso- Salon grande</option>
+                                                            <option value="terraza">Primer piso - Salon chico</option>
+                                                            <option value="abajo">Planta baja</option>
+                                                            <option value="afuera">Afuera</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="turno"><b>Turno: </b> *</label>
+                                                <div class="inputGroupContainer">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                        <select name="turno" id="turno" required style="width: 70%;">
+                                                            <option value="default">Seleccionar turno</option>
+                                                           <option value="almuerzo">Almuerzo</option>
+                                                            <option value="cena">Cena</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="form-group">
+                                                <label for="fecha"><b>Cantidad persona</b> *</label>
+                                                    <div class="inputGroupContainer">
+                                                        <div class="input-group">
+                                                        <input type="range" name="personas" id="personas" max="40" min="0" value="0" required style="width: 70%;">
+                                                        <i class="fas fa-user" id="nro"> </i></td>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fecha"><b>Hora:</b> *</label>
+                                                <div class="inputGroupContainer">
+                                                    <div class="input-group">
+                                                            <span class="input-group-addon"><i class="far fa-clock"></i></span>
+                                                        <select name="hora" id="hora" required style="width: 65%;">
+                                                            <option value="a">Seleccione una hora</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                            </div>
+                            <div class="card-footer">
+                                    <div class="form-group">
+                                            <div class="inputGroupContainer">
+                                                <input class="btn btn-success" type="submit" id="button" value="ENVIAR">
+                                                 <input class="btn btn-warning"  type="button" name="resert" value="LIMPIAR" id="resert">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <div class="inputGroupContainer">
+                                                        <span id="mensajePersona"> </span>
+                                                        <span id="mensajeHora"> </span>
+                                                        <span id="mensajeTurno"> </span>
+                                                        <span id="mensajeSalon"> </span>
+                                                </div>
+                                            </div>
+                                    
+                            </div>
+                                
+                        </form>
+                        </div>
+            </div>
+        
+            </div>
+    </div>
+    <div class="conteiner-fluid" id="exito" >
+        <div class="row" >
+                <div class="col-md-10 col-lg-10 col-xs-10 "  style=" border-color: #0099CC;margin: 1em;">
+                        <div class="card border-primary"  >
+                                <div class="card-header" id="exito-header" style="text-align: center;">
+                                    <h1>Reserva exitosa !</h1>
+                                </div>
+                                <div class="card-body" id="exito-body">
+                                  
+                                </div>      
+                        </div>
+                </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="conteiner" id="#by" style="position: absolute;width: 100%;text-align: center;border: groove; background-color:lightgrey; right: 0%;" id="cont-ubicacion">
+        <div class="row" >
+            <div class="col">
+                <div class="card" style="background-color:lightgrey;">
+                        <div class="card-body" style="position:relative;margin-top: 5px;margin-bottom: 5px;">
+                                <span style="font-size: 1em;"></i>2019 - Diseños web personizados : sebastianbatalla1@gmail.com - Todos los derechos reservados©</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./js/reserva.js"></script>
+</body>
+</html>
+
+
+
+

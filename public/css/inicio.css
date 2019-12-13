@@ -1,0 +1,180 @@
+body{
+    background-color: black;
+}
+#body-cuadro{
+    background-color: black;
+}
+/*******************  PARA CELULARES *****************************/
+@media screen and (max-width: 766px) {
+    #img-navbar{
+    	height: 1rem !important;
+    	width: 1rem !important;
+    }
+    .navbar{
+        background-color: rgb(128, 10, 10);
+    }
+    #tiles{
+    	margin-top: 40px;
+    }
+    .ser-res{
+    	display: block !important;
+    	margin-top: 60px;
+    }
+    .display-3{
+        font-size: 30%;
+        color: red;
+     }
+     .modal{
+        max-width: 95%;
+    }
+
+
+}
+@media (min-width: 767px){
+	
+}
+
+@media(min-width:768px) and (max-width:1250px) {
+body {
+    overflow-x: hidden;/** esto que hace?**/
+    font-size: 180%;
+    background-color: black;
+    
+}
+.container {  
+    max-width: 1140px;  
+  } 
+
+.input{
+    background: black;
+    font-size: 100%;
+    font-weight: bold;
+}
+#btn-acceso{
+    font-size: 150%;position: relative;top:15%;right: 15%;
+}
+
+}
+/****************************************************************/
+  /********BODY*********/
+  .navbar{
+	box-shadow: 1px 1px 10px #000;
+    height: auto;
+   
+    font-size: 130%; 
+}
+li{
+  
+    padding: 2%;
+    font-size: 110%;
+    font-weight: bold;
+}
+.container-fluid {  
+    align-content: center;
+    width: 100%;  
+    padding-right: 15px;  
+    padding-left: 24%;  
+    margin-right: auto;  
+    margin-left: auto;  
+  }  
+/****************************************************************/
+@media screen and (max-width: 766px) {
+    #img-navbar{
+    	visibility: hidden;
+    }
+  
+    #tiles{
+    	margin-top: 40px;
+    }
+    .ser-res{
+    	display: block !important;
+    	margin-top: 60px;
+    }
+    .display-3{
+        font-size: 30%;
+        color: red;
+     }
+     #body-cuadro{
+        position: relative;width: 130%;height:475%;margin-top:32%;margin-bottom:41%;margin-left: -42%;
+    }
+  
+}
+/*****************          PARA COMPURADORAS         *********************/
+@media (min-width: 767px){
+    .navbar{
+        background-color: rgba(128, 10, 10, 0.616);
+    }
+    #a1{
+            font-size: 200%;
+            font-weight: bold;
+    }
+    #img-fuego{
+        position: relative;width: 85%;height:55%;margin-top:8%;margin-left: 13.7%;
+    }
+	#btn-acceso{
+        font-size: 150%;position: relative;top:15%;right: 15%;
+    }
+    #inicio{
+        position: relative;
+        max-height: 100%x;
+    }
+    #body-cuadro{
+        position: relative;
+        width: 130%;
+        max-height:10%;
+        
+       
+    }
+/****************************************************************/
+@media(min-width:768px) and (max-width:1250px) {
+    
+    #inicio{
+        position: relative;
+        max-height: 100%x;
+    }
+
+}
+  /****************************************************************/
+    #btn-acceso{
+        font-size: 150%;position: relative;top:15%;right: 15%;
+    }
+
+body {
+    overflow-x: hidden;/** esto que hace?**/
+    font-size: 180%;
+    
+}
+.container {  
+    max-width: 1140px;  
+  } 
+
+.input{
+    background: black;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+}
+  /********BODY*********/
+  .navbar{
+	box-shadow: 1px 1px 10px #000;
+    height: auto;
+}
+#h1{
+    color: white;
+    font-size: 120%;
+}
+
+#row-pagos{
+    justify-content: center;
+   
+  
+    align-content: center;
+    align-items: center;
+}
+.box{
+    justify-content: center;
+    align-content: center;
+    margin-left: 35%;
+}
+

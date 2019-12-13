@@ -1,0 +1,157 @@
+@media screen and (max-width: 766px) {
+    #img-navbar{
+    	height: 2rem !important;
+    	width: 1rem !important;
+    }
+  
+    #tiles{
+    	margin-top: 40px;
+    }
+    .ser-res{
+    	display: block !important;
+    	margin-top: 60px;
+    }
+    .display-3{
+        font-size: 30%;
+        color: red;
+     }
+}
+@media (min-width: 767px){
+    #card-reserva{
+        margin-left: 9em;
+    }
+}
+
+@media(min-width:768px) and (max-width:1250px) {
+    #card-reserva{
+        padding-left: 6em;
+    }
+body {
+    overflow-x: hidden;/** esto que hace?**/
+    font-size: 180%;
+    
+}
+.container {  
+    max-width: 1140px;  
+  } 
+.display-4{
+    margin-left: -25rem;
+}
+
+
+}
+  /********BODY*********/
+  .navbar{
+	box-shadow: 1px 1px 10px #000;
+    height: auto;
+    font-size: 130%; 
+}
+li{
+    padding: 27px;
+    font-size: 100%;
+    font-weight: bold;
+}
+body {
+    overflow-x: hidden;/** esto que hace?**/
+    
+}
+.container-fluid {  
+    align-content: center;
+    width: 100%;  
+    padding-right: 10px;  
+    padding-left: 24%;  
+    margin-right: auto;  
+    margin-left: auto;  
+  }  
+
+
+@media screen and (max-width: 766px) {
+    #img-navbar{
+    	height: 2rem !important;
+    	width: 1rem !important;
+    }
+  
+    #tiles{
+    	margin-top: 40px;
+    }
+    .ser-res{
+    	display: block !important;
+    	margin-top: 60px;
+    }
+    .display-3{
+        font-size: 30%;
+        color: red;
+     }
+}
+@media (min-width: 767px){
+	
+}
+
+@media(min-width:768px) and (max-width:1250px) {
+
+body {
+    overflow-x: hidden;/** esto que hace?**/
+    font-size: 180%;
+    
+}
+.container {  
+    max-width: 1140px;  
+  } 
+
+
+}
+.form-group{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#nombre,#apellido,#telefono,#email,#fecha,#salon,#turno{
+   
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
+  /********BODY*********/
+  .navbar{
+	box-shadow: 1px 1px 10px #000;
+    height: auto;
+    font-size: 100%; 
+}
+body{
+    background: #EB5757;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#exito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35%;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 15%;
+   
+}
+.dropdown-menu{
+    font-size: 105%;
+    color: black;
+    font-weight: bold; 
+}
+#button{
+    margin-left: 15%;
+    font-size: 150%;
+     font-weight: bold;
+     border-radius: 5px;
+    
+}
+#resert{
+    margin-left: 15%;
+    font-size: 150%;
+     font-weight: bold;
+     border-radius: 5px;
+     
+}
+#col-1{
+    justify-content: center;
+    align-content: center;
+}

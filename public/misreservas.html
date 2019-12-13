@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+
+    <link rel="stylesheet" href="./css/misReservas.css">
+    <script src="https://kit.fontawesome.com/279c3614b2.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+
+
+ <div class="container" id="cont-reserva"  style="margin-top:9%;">    
+<div class="card col-md-6 col-lg-8 col-xs-12 border-primary" id="card" >
+    <div class="card-header">
+<h1>Consultar mis reservas</h1>
+    </div>
+    <p id="nickError"></p>
+    <div class="card-body">
+     <form id="emailForm">
+            <h3>Ingrese su email:</h3>
+          <input type="email" id="nickName" class="form-control"style="font-weight:bold;font-size:130%">
+          <h3>Ingrese codigo de confirmacion:</h3>
+          <input type="number" id="codigo" class="form-control "style="font-weight:bold;font-size:130%">
+          <button type="button" class="btn btn-primary bnt-block mt-2" id="recordar" style="margin-left:20%;font-weight: bold;font-size:1.5em;">
+            Recordar codigo   <i class="fab fa-ello"></i>
+      </button>
+           <button type="button" class="btn btn-primary bnt-block mt-2" id="ENTRAR" style="margin-left:20%;font-weight: bold;font-size:1.5em;">
+                ENTRAR   <i class="fab fa-ello"></i>
+          </button>
+    </form>
+    </div>
+</div>
+<div class="card col-md-5 mt-6 " id="card-recordar" >
+    <div class="card-header">
+<h1>Enviar codigo autorizacion</h1>
+    </div>
+    <p id="mailError"></p>
+    <div class="card-body">
+     <form id="recordarForm">
+            <h3>Ingrese su email:</h3>
+          <input type="email" id="email2" class="form-control " required>
+        <button type="submit" class="btn btn-primary bnt-block mt-2" id="ENVIAR" style="margin-left:20%;font-weight: bold;font-size:1.5em;">   ENVIAR    </button>
+        <button type="button" class="btn btn-warning bnt-block mt-2" id="volver_menu" style="margin-left:20%;font-weight: bold;font-size:1.5em;">   VOLVER    </button>
+    
+    </form>
+    </div>
+</div>
+
+<div class="card col-md-5 mt-6 " id="card-exito" >
+    <div class="card-header">
+<h2>Revise su casilla de email</h2>
+    </div>
+    <div class="card-body" id="card-body3">
+     <form id="exito-form">
+            <span id="h3_1"></span>
+        <button type="submit" class="btn btn-primary bnt-block mt-2" id="ok" style="margin-left:20%;font-weight: bold;font-size:1.5em;" >   ok    </button>
+    </form>
+    </div>
+</div>
+<div class="container" id="cont-mensajes" style="position: absolute; z-index: 100px; top: 30%;">
+        <div class="row">
+                <div class="card col-md-4 col-lg-4 col-xs-12 col-md-offset-5 col-lg-offset-5" style="background-color: white;color: black;">
+                    <div class="card-header" id="header-msj"> <h2>Oops</h2></div>
+                    <div class="card-body" id="body-msj"> <h3>No se ha podido encontrar ninguna reserva con el email y codigo de reserva dado.
+                            Por favor reintente.</h3>
+                    </div>
+                    <div class="card-footer"id="footer-msj">
+                        <button type="button" class="btn btn-warning" id="msj-cerrar" style="position: relative;left: 20%;">CERRAR</button>
+                    </div>
+            </div>
+    </div>
+</div>
+<div class="container" id="cont-mostrar">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-xs-12">
+                <div style="background-color: white; color: black;">
+                    
+                    <h1>Turno:    </h1><h1 id="id_reserva"></h1>
+                    <h1>Fecha:    </h1><h1 id="fecha"></h1>
+                    <h1>Email:   </h1><h1 id="email"></h1>
+                    <h1>Comensales:   </h1><h1 id="comensales"></h1>
+                    <h1>Salon:  </h1><h1 id="salon"></h1>
+                    <h1>Turno:  </h1><h1 id="turno"></h1>
+                
+                </div>
+            </div>
+        </div>
+</div>
+<script src="./js/misreservas.js"></script>
+</body>
+</html>
+
+
+

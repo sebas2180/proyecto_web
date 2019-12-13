@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>ACCESO RESTRINGIDO - Lista de reservas</title>
+    <link rel="stylesheet" href="./css/lista_reservas.css">
+    <script src="https://kit.fontawesome.com/279c3614b2.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+        <div class="container-fluid" >
+                <div class="row" style="color:black;background-color: aqua;border-color: navy;">
+                    <div class="col-md-2 col-lg-2 col-xs-4">
+                    <i class="fas fa-user" style="font-size: 300%;color:black;">  Bienvenido:</i>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-4">
+                            <h2 id="id_user"></h2>
+                    </div>
+                    <div class="col-md-2  col-lg-2 col-md-offset-2 col-lg-offset-2 col-xs-1">
+                            <button id="btn-feriados" class="btn btn-default" style="font-weight: bold;text-align: center;position: relative;width:100%;font-size:200%;justify-content: center;">Gestionar feriados</button>
+                    </div>
+                    <div class="col-md-2  col-lg-2 ">
+                            <button id="btn-salir" class="btn btn-default" style="font-weight: bold;text-align: center;position: relative;width:100%;font-size:200%;justify-content: center;">Salir</button>
+                    </div>
+                </div>
+            </div>
+
+    <br><br>
+    <hr>
+        <div class="container" id="cont-0">
+            <form id="form-fecha">
+                <div class="row">
+                    <form >
+                    <div class="col-lg-2 col-md-2 col-xs-12 " id="filtro_check">
+                        <span style="font-size: 150%;color:white;font-weight: bold;">ESTADO:</span>
+                        <select name="estado" id="estado1" style="font-size: 150%;font-weight: bold;">
+                            <option value="Todas">Todas</option>
+                            <option value="finalizada">finalizadas</option>
+                            <option value="anulada">canceladas</option>
+                            <option value="activa">activas</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12" id="filtro_check">
+                        <span style="font-size: 150%;color:white;font-weight: bold;">FILTRAR POR FECHA:</span>
+                        <div class="custom-control custom-radio custom-control-inline"  style="color: white;font-size: 120%;">
+                          <input type="radio" class="custom-control-input" id="si" name="radio" value="radio">
+                          <label class="custom-control-label" for="si">SI</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline" style="color: white;font-size: 120%;">
+                            <input type="radio" class="custom-control-input" id="no" name="radio" value="radio" checked="checked">
+                            <label class="custom-control-label" for="no">NO</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-6" id="filtro-1" style="margin-left: 30%;">
+                        <button type="submit" id="btn-fecha" value="btn-1" class="btn btn-primary" style="font-weight: bold;font-size: 150%">FILTRAR</button>
+                    </div>  
+            </form>
+            <br><br>
+        </div>
+         <div class="col-lg-4 col-md-4 col-xs-6" id="filtro_fecha">
+            <br>
+            <span style="font-size: 150%;font-weight: bold;color: white;">Fecha:   <input name="fecha"  id="fecha" type="date" style="color: black;"></span>
+        </div>
+        <br>  
+        </div>
+        </form>
+        </div>
+        <div class="conteiner" id="cont-1" >
+                <form id="form-filtro">
+                    <div class="row">
+                            <div class="col-lg-1 col-md-1 col-xs-6"id="filtro-3">
+                                    <span>ESTADO:</span>
+                                    <select name="estado" id="estado2" >
+                                            <option value="Todas">Todas</option>
+                                           <option value="finalizada">finalizadas</option>
+                                           <option value="anulada">canceladas</option>
+                                           <option value="activa">activas</option>
+                                    </select>
+                            </div>
+                        <div class="col-lg-1 col-md-1 col-xs-6"id="filtro-2">
+                                <span>Turno</span>
+                           <select name="turno" id="turno">
+                                <option value="Seleccionar">Seleccionar</option>
+                               <option value="almuerzo">Almuerzo</option>
+                               <option value="cena">Cena</option>
+                           </select>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-xs-6" id="filtro-3">
+                                <span>Salon:  </span>
+                                <select name="salon" id="salon">
+                                        <option value="Seleccionar">Seleccionar</option>
+                                        <option value="arriba">arriba</option>
+                                        <option value="terraza">terraza</option>
+                                        <option value="abajo">abajo</option>
+                                    </select>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-6" id="filtro-3" >
+                                <span>cod_reserva:  </span><input type="number" id="codigo">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-6" id="filtro-3">
+                            <button type="submit" value="btn-filtros" id="btn-1" class="btn btn-primary" style="font-weight: bold;font-size: 150%">FILTRAR</button>
+                            <button type="button" value="btn-3" id="btn-3" class="btn btn-success" style="font-weight: bold;font-size: 150%">FILTRAR POR CODIGO</button>
+                        </div>
+                    </div>
+                   
+                </form>
+        </div>
+         <br>
+        <hr>
+            <div class="conteiner" id="cont-3" >
+                <h5 style="font-size: 150%;"> <i class="fas fa-angle-double-up" id="arriba"></i>Filtrar por fecha</h5>
+            </div>
+            <div class="conteiner" id="cont-4">
+                <h5  style="font-size: 150%;">   <i class="fas fa-angle-double-down" id="abajo"></i>Otros filtros</h5>
+            </div>
+            </div>
+            <br>
+        <hr>
+        <div class="container">
+            <div class="row" id="datos-estadisticas">
+                
+            </div>
+        </div>
+        <hr>
+
+    <div class="container" id="cont-2">
+            <div class="row" id="row-2">
+                   
+            </div>
+    </div>
+    <div id="cont-asignacion" class="container" style="position: fixed;z-index: 150%;left: 5%;top: 30%;">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-xs-12 col-md-offset-2 col-lg-offset-2 ">
+                <div class="card"style="border-color: black solid 5px;">
+                    <div class="card-header" id="header-asignacion">
+                        
+                    </div>
+                    <div class="card-body " >
+                        <form id="asignar-mesa"></div>
+                            <h2>Nuevo actual:</h2><h2 id="nro-actual"></h2>
+                            <h2>Nuevo numero: <input id="nro_mesa" type="number" style="width: 10%; border-color: darkgreen;" required></h2>
+                    <div class="card-footer" style="position: relative;">
+                            <button id="btn_guardar_nro_mesa" class="btn btn-success" style="font-size: 120%;font-weight: bold;">ASIGNAR MESA</button>
+                            <button id="cancelar-asignacion"class="btn btn-warning" style="font-size: 120%;font-weight: bold;position: relative;left: 15%;">CANCELAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./js/lista_reservas.js"></script>
+</body>
+</html>
+
+
