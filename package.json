@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/main.js",
-    "start": "webpack",
+    "start": "node node.js",
     "start2": "node node.js"
   },
   "author": "",
