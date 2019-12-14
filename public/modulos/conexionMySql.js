@@ -7,7 +7,7 @@ var connection;
 module.exports = {
 
 dbConnection: function () {
-
+/*
     connection = mysql.createConnection({
         host: 'localhost',
         user: 'root',
@@ -17,6 +17,16 @@ dbConnection: function () {
         port: 3306,
         dateStrings:true
     });
+    */
+   connection = mysql.createConnection({
+    host: 'remotemysql.com',
+    user: '8dzNSQvCCI',
+    password: '7DvN71CBV2',
+    database: '8dzNSQvCCI',
+    insecureAuth : true,
+    port: 3306,
+    dateStrings:true
+});
     connection.connect();
     return connection;
 }
